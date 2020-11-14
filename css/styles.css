@@ -1,26 +1,84 @@
+/* fonts*/
+/* Cuprum normal */
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+        url("../fonts/cuprum.woff") format("woff");
+}
+
+/* Cuprum bold */
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprumbold.woff") format("woff");
+}
+
+/* cuprum italic */
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+  url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+/* Pt Sans normal */
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+}
+
+/* Pt Sans bold */
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+}
+
 .page {
   height: 100%;
 }
 
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .container {
-  width: 1000px;
+  min-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px;  
 }
 
 /******************Блок HEADER START *******************/
 .main-header {
   position: relative;
-  width: 100%;
-  /*height: auto;*/
+  width: 100%;  
   height: 100vh;
   padding: 0;
   min-height: 35rem;  
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/bg-masthead.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  /*background-attachment: scroll;*/
+  background-repeat: no-repeat;  
   background-size: cover;
+}
+
+.main-header-slider {
+
 }
 
 .main-header h1 {
@@ -32,6 +90,11 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.nav-align {
+  display: flex;
+  justify-content: center;
 }
 
 /* .main-header h2 {
@@ -57,6 +120,90 @@
 } */
 
 /******************Блок HEADER END *******************/
+                 
+                 /******************Блок SLIDER START *****red*************/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #fff;  
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider__control_show {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
+                 /******************Блок SLIDER END *******************/
+
 
 /******************Блок КОНТАКТЫ START *******************/
 
@@ -150,6 +297,7 @@ a.text-primary:hover, a.text-primary:focus {
   margin: 0;
 }
 
+.footer-info-slider,
 .footer-info {
   margin-top: 50px;
   display: flex;
@@ -159,6 +307,10 @@ a.text-primary:hover, a.text-primary:focus {
   color:white;
   background-color: rgba(0, 0, 0, 0.9);
   height: 3rem;
+}
+
+.footer-info-slider {
+  margin-top: 145px;
 }
 
 .text-black-50 {
@@ -206,6 +358,7 @@ a.text-primary:hover, a.text-primary:focus {
   border-radius: 25px;
   filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.2));
   line-height: 3px;
+  color: black;
 }
 
 .contacts-phone {
@@ -214,26 +367,37 @@ a.text-primary:hover, a.text-primary:focus {
   padding-top: 10px;
 }
 
+.switcher-languagers-slider,
 .switcher-languagers {
   display: grid;
   grid-template-columns: 65px 65px;
   justify-content: end;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 32px;
-  text-align: right;
+  font-size: 16px;
+  line-height: 22px;  
   padding-right: 20px;  
   padding-top: 5px;    
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
-.switcher-languagers .ukraine:hover {   
-  /* opacity: 1; */
-  color: blue;  
+.switcher-languagers-slider a {
+  font-style: bold;
+  color: black;
 }
 
+.switcher-languagers-slider .ukraine:hover, 
+.switcher-languagers .ukraine:hover {     
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: bold;
+  color: #2255FF;  
+}
+
+.switcher-languagers-slider .english:hover, 
 .switcher-languagers .english:hover {     
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: bold;
   color: violet;    
 }
 
@@ -339,7 +503,7 @@ nav a {
   display:block;
   padding:0 10px; 
   color:#FFF;
-  font-size:20px;
+  font-size:18px;
   line-height: 45px;
   text-decoration:none;
 }
@@ -480,7 +644,7 @@ li > a:only-child:after { content: ''; }*/
 }
 
 .footer-info-decorative {
-  margin-top: 50px;
+  margin-top: 50px;  
 }
 
 .decorative {
