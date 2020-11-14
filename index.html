@@ -1,137 +1,110 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html class="page" lang="ua">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Напилення кераміки" />
+        <meta name="keywords" content="Напилення алюмінія, керамічна черепиця, металеве покриття, декоративна цегла,розпилення води">
+        <meta name="author" content="Коритченко К.В." />
         <title>Space Ceramic</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="img/favicon-compr.png" />        
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />         
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet"/>		
     </head>
-    <body id="page-top">
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container d-flex h-100 align-items-center">
+    <body class="our-dev">
+
+              <!--*************** HEADER START*******************-->
+        <header class="main-header">    		
+    		<nav class="main-header-nav">
+    			<h1 class="visually-hidden">Напилення кераміки</h1>
+				<ul class="header-nav-list container">
+					<li><a href="#">Наші вироби</a>
+						<ul>    							
+							<li><a class="" href="ceramic_tile.html">Керамічна черепиця з металевим покриттям</a></li>
+							<li><a class="" href="decorative_brick.html">Декоративна цегла з покриттям</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Принцип роботи</a></li>
+					<li><a href="#">Фото</a></li>
+					<li><a href="our_development.html">Наша розробка</a></li>    					
+					<li><a href="#">Патентний захист</a></li>
+					<li><a href="#">Відео</a>
+						<ul>
+							<li><a href="#">Напилення алюмінія</a></li>
+							<li><a href="#">Розпилення води</a></li>
+						</ul>
+					</li>
+                    <li><a href="#">Наші партнери</a>
+				</ul>    				
+    		</nav>    		
+    		<div class="switcher-languagers">
+    					<a lang="uk" hreflang="uk" class="ukraine" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFQSURBVHjaYmRo/c8AB//+MfwBkgwg8s8/KPoFI4GIgQEgAIdycgMACAMxUAF6oygqoQ1q45dkzSH5N26XR/8zCEuepggsVEPFkxB+S9bcRwCxMDCBVD/5+h+o9O8/BqDE378Mv/+DpCGKfgERmCHLw8jw4x9AAIFs+AdUBLQWZDZI9a/////8BSuFawBzf/8FuQMggFiALvsLsh2k+g/cbCTVUBLkKgaGDwwAAcTCIHJKhFPh19+fIHf/+/cbpBNI/gO75x+I/RfKluFiY5A6AhBAjH8fMjDI5P///+A/wy8GoFf/A+34hZVkYlJ6f/wUQACxAEOSESwEDEhURSiqwbJ/gKENEEAgDcwgDlAIrgiLNgaGvyD0hwEggEAamP4DdUrCREE6GRl/gyMPQv6BqgYG+z8GgABi/HoTFL///kBJBjgbwmBAcEEcBgaAAAMASIdu6OFHDhsAAAAASUVORK5CYII=" title="Українська" alt="Українська" scale="0"><span style="margin-left:0.3em;">Укр</span></a>
+    					<a lang="en-US" hreflang="en-US" class="english" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English" scale="0"><span style="margin-left:0.3em;">Eng</span></a>    					
+    		</div>
+    		<h2 class="visually-hidden">Елітна керамічна черепиця</h2>            
+            <div class="container d-flex h-100 align-items-center">         
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Space Ceramic</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Виробник елітної керамічної черепиці та облицювальної цегли з натуральним металопокриттям</h2>
+                    <h1 class="mx-auto my-0 text-uppercase">Space<br>Ceramic
+                    </h1>
+                    <h2 class="mx-auto header-title-info">Виробник елітної керамічної черепиці та облицювальної цегли з натуральним металопокриттям
+                    </h2>
                 </div>
-            </div>
+            </div> 
         </header>
+                            <!--*************** HEADER END *******************-->
+                        
+                         <!--************* Блок Main START ***********-->
+        <main> 
+            <section class="contact-section bg-black">
+            <div class="contact-block">                         
+                    
+                          <!-- ********* Adress ******* -->
+                <div class="contact1-section">                    
+                    <img class="contact-img" src="img/adress-1.png">
+                    <p class="text-uppercase address">Адреса</p>
+                    <p class="contact-line"></p>
+                    <p><b>м. Харків</b></p>                    
+                </div>
+                         
+                         <!-- ********* E-mail ******* -->
+                <div class="contact2-section">
+                    <img class="contact-img" src="img/e-mail.png">
+                    <p class="text-uppercase address">Електронна пошта</p>
+                    <p class="contact-line"></p>
+                    <p><i>Костянтин Володимирович</i></p>
+                    <a href="korytchenko_kv@ukr.net" class="feedback-link" aria-label="написать письмо"><b>korytchenko_kv@ukr.net</b></a>
+                </div>
+
+                        <!-- ********* Phone Number ******* -->
+                <div class="contact3-section">                            
+                    <img class="contact-img" src="img/phone.png">                    
+                    <p class="text-uppercase">Номер телефону</p>
+                    <p class="contact-line"></p>
+                    <p>Костянтин Володимирович</p>                    
+                    <a class="contacts-phone" href="tel:+380972239827" aria-label="кнопка контактный телефон"><b>+380-97-223-98-27</b></a>                 
+                </div>
+            </div>  
+        </section>
+                 
+        </main> 
+                           <!--************* Блок Main END ***********-->    
+                    
+                          <!--*********** Блок Контакты START ********-->
+
         
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container">
-                <!-- Featured Project Row-->
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Наша розробка</h4>
-                            <p class="text-black-50 mb-0">За допомогою цього апарату ми наносимо метал на кераміку</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Керамічна черепиця з металевим покриттям</h4>
-                                    <p class="mb-0 text-white-50">Такий дах має багато переваг: розкішний, довговічний, послаблює дію електро-магнітного випромінювання, має шумо- і теплоізолюючий ефект і лише трохи перевищує ціну на звичайну черепицю.</p>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Two Row-->
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Декоративна цегла з покриттям міддю або алюмінієм</h4>
-                                    <p class="mb-0 text-white-50">Наша цегла має 3 основні переваги, перед якими не встоїть ні один архітектор чи будівельник:</p>
-                                    <p class="mb-0 text-white-50">1. Відповідає стилю хай-тек</p>
-                                    <p class="mb-0 text-white-50">2. Захищає від висолів</p>
-                                    <p class="mb-0 text-white-50">3. Має антигрибкові властивості</p>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container">
-                <div class="row">
-                	<div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Адреса</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">м. Харків</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Електрона пошта</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">Костянтин Володимирович</div>
-                                <div class="small text-black-50"><a href="#!">korytchenko_kv@ukr.net</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Номер телефону</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">Костянтин Володимирович</div>
-                                <div class="small text-black-50">+380 97 223 98 27</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              <!--  <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-                </div>  -->
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50">
-        	<div class="container">Технологія захищена патентом України №118510</div>
-        	<div class="container">та міжнародною РСТ-заявою WO2019045669</div>
-        	<div class="container">Space Ceramic © 2020</div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script> 
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>   
-        <!-- Core theme JS--> 
-        <script src="js/scripts.js"></script> 
+                    <!-- ********** Блок Контакты END ******** -->
+
+                    <!--**************** Footer START ***************-->
+        <footer class="footer-info">        
+                <p>Технологія захищена патентом України №118510 та міжнародною РСТ-заявою WO2019045669 Space Ceramic © 2020
+                </p>        	                                 
+        </footer> 
+                    <!--**************** Footer END ***************-->
+
     </body>
 </html>
 
-<!--добавити наші партнери-->
+
