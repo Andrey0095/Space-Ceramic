@@ -97,6 +97,10 @@
   justify-content: center;
 }
 
+.cig {
+  border-radius: 5px;  
+}
+
 /* .main-header h2 {
   max-width: 10rem;
   font-size: 1rem;
@@ -470,7 +474,7 @@ a {
 .header-title-info {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 200px;
-  font-size: 30px;
+  font-size: 26px;
   max-width: 40rem;
 }
 
