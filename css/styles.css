@@ -92,6 +92,11 @@
           background-clip: text;
 }
 
+.info-block-size {
+  width: 550px;
+  height: 200px;
+}
+
 .nav-align {
   display: flex;
   justify-content: center;
