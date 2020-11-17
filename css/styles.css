@@ -122,6 +122,7 @@ body {
 }
 
 .slider__item {
+  margin-top: 30px;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -321,11 +322,6 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
  /* ****************************** Разные offset-ы  START**************************** */
-
-.footer-info-slider {
-  margin-top: 68px;
-}
-
 .our_development-offset,
 .decorative-brick-offset {
   padding-top: 53px;
@@ -348,11 +344,15 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .slider-offset {
-  margin-top: 143px; 
+  margin-top: 138px; 
+}
+
+.our-footer-offset {
+ margin-top: 73px;  
 }
 
 .patent-offset {
- margin-top: 110px; 
+ margin-top: 138px; 
 }
 
 /* ****************************** Разные offset-ы  END**************************** */
@@ -587,24 +587,17 @@ nav ul li:hover > ul {
 }
   
 /* Ширина выпадающего меню */
-nav ul ul li {
-  /*max-width: 20rem;*/
+nav ul ul li {  
   float: none;
   display:list-item;
   position: relative;  
 }
 
-.header-nav-list {
-  /* margin-left: 11rem; */
-  /* margin-right: auto;
-  margin-left: auto; */
-  /* text-align: center; */
-}
-
 .header-nav-list-our,
 .header-nav-list-ceramic,
-.header-nav-list-decorative {
-  margin-left: 6rem;
+.header-nav-list-decorative {  
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -700,7 +693,7 @@ li > a:only-child:after { content: ''; }*/
 
 /******************Блок Decorative Brick START *******************/
 .decorative-tile-info {
-  color: rgba(210,10,120);
+  color: rgba(210,210,120);
 }
 
 .footer-info-decorative {
