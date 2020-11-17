@@ -116,6 +116,12 @@ body {
   padding-top: 75px;
 }
 
+.patent {
+  position: relative;
+  overflow: hidden;
+  padding-top: 25px;
+}
+
 .slider__wrapper {
   display: flex;
   transition: transform 0.6s ease;
@@ -125,6 +131,24 @@ body {
   margin-top: 30px;
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+.slider__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.patent__item {
+  margin-top: 0px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.patent__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
 }
 
 .slider__control {
@@ -178,13 +202,6 @@ body {
 .slider__control_right::before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
-
-.slider__item>div {
-  line-height: 250px;
-  font-size: 100px;
-  text-align: center;
-}
-
                  /******************Блок SLIDER END *******************/
 
 /******************Блок КОНТАКТЫ START *******************/
@@ -352,7 +369,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .patent-offset {
- margin-top: 138px; 
+ margin-top: 58px; 
 }
 
 /* ****************************** Разные offset-ы  END**************************** */
@@ -383,6 +400,7 @@ a.text-primary:hover, a.text-primary:focus {
   color: blue;
   text-align: center;
   padding-top: 10px;
+  text-decoration: none;
 }
 
 .address {
@@ -394,7 +412,8 @@ a.text-primary:hover, a.text-primary:focus {
 .contact3-section {
   display: flex;
   flex-direction: column;  
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   width: 300px;
   height: 210px;
   background-color: rgba(230,230,230,0.9);      
@@ -409,6 +428,7 @@ a.text-primary:hover, a.text-primary:focus {
   color: black;
   text-align: center;
   padding-top: 10px;
+  text-decoration: none;
 }
 
   /* **********************************Переключатели языков START************************************** */
@@ -539,7 +559,7 @@ a {
 }
 
 .my-0 {
-  margin-top: -100px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
