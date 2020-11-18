@@ -681,11 +681,21 @@ li > a:only-child:after { content: ''; }*/
 /******************Блок Ceramic Tile START *******************/
 .our-info-ceramic {
   color: rgba(150,255,255);
+}
 
+.decorative-block-center {
+  display:grid;  
+  justify-content: center;  
+}
+
+.decorative-block-center p {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .text-decorative {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 14px;  
   text-align: left; 
   margin-left: 20px;
