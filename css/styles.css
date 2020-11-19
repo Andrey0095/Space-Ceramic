@@ -119,7 +119,7 @@ body {
 .patent {
   position: relative;
   overflow: hidden;
-  padding-top: 25px;
+  padding-top: 25px;  
 }
 
 .slider__wrapper {
@@ -553,7 +553,7 @@ a {
 
 .header-title-info {
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 200px;
+  margin-top: 170px;
   font-size: 26px;
   max-width: 540px;
   line-height: 30px;
@@ -563,8 +563,8 @@ a {
   text-transform: uppercase;
 }
 
-.my-0 {
-  margin-top: 200px;
+.space-ceramic-offset {
+  margin-top: 221px;
   /* margin-bottom: 50px; */
 }
 
@@ -671,6 +671,8 @@ li > a:only-child:after { content: ''; }*/
 }
 
 .our-dev {
+  display: grid; 
+  grid-template-rows: min-content 1fr min-content;
   background-color: #DDD7D7;
   background-size: 50px 50px;
   background-image: 
