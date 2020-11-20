@@ -334,13 +334,16 @@ a.text-primary:hover, a.text-primary:focus {
   font-weight: normal;
   color:#aa33ff;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .project {
   display: grid;
   justify-content: center;
+  z-index: 10;
 }
 
  /* ****************************** Разные offset-ы  START**************************** */
@@ -654,7 +657,7 @@ li > a:only-child:after { content: ''; }*/
 }
 
 .our-block h4 {
-  margin-top: 170px;
+  margin-top: 120px;
   font-size: 32px;
   line-height: 30px;
   font-weight: bold;
