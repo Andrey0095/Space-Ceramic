@@ -79,8 +79,8 @@
 
 .main-header h1 {
  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";      
-  font-size: 6.5rem;
-  line-height: 6.5rem;
+  font-size: 7rem;
+  line-height: 7rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.01));
   -webkit-text-fill-color: transparent;
@@ -348,7 +348,6 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
  /* ****************************** Разные offset-ы  START**************************** */
-.our_development-offset,
 .decorative-brick-offset {
   padding-top: 53px;
 }
@@ -382,6 +381,25 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 /* ****************************** Разные offset-ы  END**************************** */
+/* ****************************** Разные размеры  экранов START**************************** */
+@media (min-width: 768px) {
+.space-ceramic-offset {
+  margin-top: 125px;
+}
+
+  .main-header h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
+} 
+/* @media (min-width: 992x) {
+  .main-header {
+    h1: height: 50vh;
+     height: 100vh;
+    padding: 0; 
+  }   */
+/* ****************************** Разные размеры  экранов END**************************** */
+
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5);
@@ -557,8 +575,8 @@ a {
 
 .header-title-info {
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 150px;
-  font-size: 26px;
+  margin-top: 130px;
+  font-size: 24px;
   max-width: 540px;
   line-height: 30px;
 }
@@ -568,7 +586,7 @@ a {
 }
 
 .space-ceramic-offset {
-  margin-top: 145px;
+  margin-top: 125px;
   /* margin-bottom: 50px; */
 }
 
@@ -646,9 +664,62 @@ li > a:only-child:after { content: ''; }*/
 /******************Блок МЕНЮ END *******************/
 
 /******************Блок Our Development START *******************/
-.our-block {
-  display: flex;
-  justify-content: space-between;
+.our-block {  
+  background-color: rgba(255,255,255);
+  /* position: relative; */
+  color: black;
+}
+
+.our-development {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  border-radius: 25px;
+  border-bottom: solid 4px rgba(110,200,150);
+  filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.5));
+}
+
+.our-center {
+  text-align: center;
+  font-size: 22px;
+}
+
+.our-info-offset {
+  padding-top: 140px;
+  color: rgba(10,70,70);    
+  font-weight:800;
+}
+
+.our-title {  
+  margin: 0;
+  text-align: center;
+  margin-left: auto;  
+  margin-right: auto;
+  font-size: 22px;
+  width: 700px;
+}
+
+.system1-img {
+  margin: 0;
+  padding-left: 25%;  
+}
+
+.system2-img {
+  margin: 0;
+  padding-left: 40%;  
+}
+
+.our-info3 {
+  text-align: center;
+  font-size: 18px;   
+}
+
+.our-info4 {  
+  text-align: center;
+  font-size: 18px;   
+  width: 950px;
+  margin-left: auto;  
+  margin-right: auto;
 }
 
 .our-info {
@@ -666,7 +737,7 @@ li > a:only-child:after { content: ''; }*/
 }
 
 .our-block h4 {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   font-size: 32px;
   line-height: 30px;
   font-weight: bold;
@@ -676,7 +747,7 @@ li > a:only-child:after { content: ''; }*/
 .our-info2 {
   font-size: 22px;
   line-height: 34px;  
-  text-align: center;
+  text-align: justify;
   font-family: "Courier New", Arial, sans-serif;
   margin-left: 15px;
   margin-right: 10px;
