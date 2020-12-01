@@ -4,7 +4,7 @@
         var
           _mainElement = document.querySelector(selector), // основный элемент блока
           _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
-          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderItems = _mainElement.querySelectorAll('.patent__item'), // элементы (.slider-item)
           _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
           _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
           _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
@@ -85,6 +85,6 @@
       }
     }());
 
-    var slider = multiItemSlider('.slider')
+    var slider = multiItemSlider('.patent')
 
   

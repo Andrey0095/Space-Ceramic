@@ -123,11 +123,6 @@
   padding-top: 75px;
 }
 
-/* img .brick {
-  overflow: hidden;
-  border-radius: 30px;
-} */
-
 .slider-kharkiv {
   position: relative;
   overflow: hidden;  
@@ -857,9 +852,9 @@ li > a:only-child:after { content: ''; }*/
 }
 
 .up-button:hover {
-  color: #473c8d;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-color: #473c8d;
+  font-weight: 900;
+  color: rgba(10,200,150);  
+  border-color: rgba(10,200,150);  
 }
 
 .shown {
