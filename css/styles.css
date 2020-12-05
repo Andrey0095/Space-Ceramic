@@ -479,8 +479,7 @@
 .switcher-languagers-ceramic .ukr:hover, 
 .switcher-languagers-slider .ukr:hover, 
 .switcher-languagers .ukr:hover {     
-  font-family: "PT Sans", "Arial", sans-serif;
-  /* font-weight: bold; */
+  font-family: "PT Sans", "Arial", sans-serif;  
   color: #2255FF;  
 }
 
@@ -489,8 +488,7 @@
 .switcher-languagers-ceramic .eng:hover,
 .switcher-languagers-slider .eng:hover, 
 .switcher-languagers .eng:hover {     
-  font-family: "PT Sans", "Arial", sans-serif;
-  /* font-weight: bold; */
+  font-family: "PT Sans", "Arial", sans-serif;  
   color: violet;    
 }
 
@@ -657,6 +655,7 @@ li > a:only-child:after { content: ''; }*/
 .our-center {
   text-align: center;
   font-size: 22px;
+  font-family: "Courier New", Arial, sans-serif;
 }
 
 .our-info-offset {       
@@ -688,8 +687,11 @@ li > a:only-child:after { content: ''; }*/
 }
 
 .our-info3 {
-  text-align: center;
-  font-size: 18px;   
+  text-align: justify; 
+  font-size: 22px;  
+  line-height: 28px;
+  margin-left: 30px;
+  margin-right: 30px;   
 }
 
 .our-info4 {  
@@ -711,7 +713,8 @@ li > a:only-child:after { content: ''; }*/
 }
 
 .our-block-img {
-  border-radius: 10px;
+  border-radius: 25px;
+  filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.5));
 }
 
 .our-block h4 {
@@ -720,15 +723,18 @@ li > a:only-child:after { content: ''; }*/
   line-height: 30px;
   font-weight: bold;
   text-align: center;    
+  margin-left: 70px;
+  margin-right: 70px;  
 } 
 
 .our-info2 {
   font-size: 22px;
   line-height: 34px;  
   text-align: justify;
-  font-family: "Courier New", Arial, sans-serif;
-  margin-left: 30px;
-  margin-right: 30px;
+  /* font-family: "Courier New", Arial, sans-serif; */
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .our-dev {
@@ -758,7 +764,7 @@ li > a:only-child:after { content: ''; }*/
 
 .decorative-block-center p {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -773,6 +779,8 @@ li > a:only-child:after { content: ''; }*/
   font-size: 22px;  
   text-align: center;
   line-height: 28px;  
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .ceramic {
@@ -791,7 +799,8 @@ li > a:only-child:after { content: ''; }*/
 
 /******************Блок Decorative Brick START *******************/
 .decorative-tile-info {
-  color: rgba(210,210,120);
+  color: rgba(210,210,120);  
+  line-height: 50px;
 }
 
 .footer-info-decorative {
