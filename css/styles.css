@@ -301,11 +301,13 @@
 .footer-info {
    display: flex;
    justify-content: center;
+   align-self: center;
+   margin: 0;
    font-weight: 400;  
    background-color: #314668;    
    color:white;    
    height: 3rem;
-   font-size: 18px;
+   font-size: 16px;
 }
 
 .decorative-footer-info,
