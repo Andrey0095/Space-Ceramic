@@ -620,8 +620,8 @@ nav ul ul {
    opacity: 0; /* По умолчанию скрываем подменю */
    visibility: hidden;
    transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
-   transition-duration: 0.6s; /* Добавляем анимацию 0.3 сек. */
-   transition-delay: 0.2s; /* Добавляем задержку в 0.15 сек. */
+   transition-duration: 0.5s; /* Добавляем анимацию 0.5 сек. */
+   transition-delay: 0.1s; /* Добавляем задержку в 0.1 сек. */
    position: absolute;  
    top: 40px;  /* the height of the main nav если Больше появляется отступ и не работает */
 }
