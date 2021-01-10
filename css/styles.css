@@ -907,8 +907,36 @@ li > a:only-child:after { content: ''; }*/
   height: 13%;
 }
 
-
+.slider-kharkiv__item div img {
+  width: 300px;
+  height: 210px;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -970,6 +998,10 @@ li > a:only-child:after { content: ''; }*/
 
 /*---------------------------------------------------------------------*/
 @media screen and (max-device-width: 1000px) {
+.slider-kharkiv__item div img {
+  width: 100%;
+  height: 260px;
+}
 .overlay{
   display: block;
 }
@@ -1007,14 +1039,16 @@ top: 20px;
   height: 50px;
   right: 20%;
   top: 20px;
+  z-index: 100;
 }
-
+ 
 .eng-img{
   position: absolute;
   width: 80px;
   height: 50px;
   right: 2%;
   top: 20px;
+  z-index: 100;
 }
 .none-text{
   display: none !important;
@@ -1314,7 +1348,7 @@ top: 20px;
 
 .overlayMenu ul li .zag{
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -1326,7 +1360,7 @@ top: 20px;
 
 .overlayMenu ul li a {
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -1576,4 +1610,150 @@ p {
 .no-show {
   display: none !important;
 } 
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75px;
+}
+
+.slider-kharkiv {
+  position: relative;
+  overflow: hidden;  
+}
+
+.slider-kharkiv {
+  z-index: 20;
+}
+
+.contact1-section .kharkiv {  
+  padding-top: 0;
+  border-radius: 20px;
+}
+
+.patent {
+  position: relative;
+  overflow: hidden;
+  padding-top: 25px;  
+}
+
+.slider__wrapper,
+ .slider-kharkiv__wrapper {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slider-kharkiv__item {
+  border-radius: 30px;
+}
+
+.slider__item {
+  margin-top: 30px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider-kharkiv__item { 
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+
+.slider__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.slider-kharkiv__item>div {  
+  text-align: center;
+}
+
+.patent__item {
+  margin-top: 0px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.patent__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.slider__control,
+.slider-kharkiv__control {
+  position: absolute;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider__control_show,
+.slider-kharkiv__control_show {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider-kharkiv__control:hover,
+.slider__control:focus,
+.slider-kharkiv__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_left,
+.slider-kharkiv__control_left {
+  left: 0;
+}
+
+.slider__control_right,
+.slider-kharkiv__control_right {
+  right: 0;
+}
+
+.slider__control::before,
+.slider-kharkiv__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before,
+.slider-kharkiv__control_left::before  {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before,
+.slider-kharkiv__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.display-none,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 }
