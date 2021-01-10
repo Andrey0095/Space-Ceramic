@@ -1414,7 +1414,6 @@ top: 20px;
           animation-delay: .9s;
 }
 .overlay.open li:nth-of-type(11) {
-  margin-left: -20px;
   -webkit-animation-delay: .9s;
           animation-delay: .9s;
 }
@@ -1451,35 +1450,31 @@ top: 20px;
           animation-delay: 1.3s;
 }
 .overlay.open li:nth-of-type(20) {
-  margin-left: -20px;
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 .overlay.open li:nth-of-type(21) {
-  margin-left: -20px;
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 .overlay.open li:nth-of-type(22) {
-  margin-left: -20px;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 .overlay.open li:nth-of-type(23) {
-  margin-left: -20px;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 .overlay.open li:nth-of-type(24) {
-  margin-left: -20px;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 .overlay.open li:nth-of-type(25) {
-  margin-left: -20px;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
+
+
 .overlayMenu ul li a:hover, .overlayMenu ul li a:active, .overlayMenu ul li a:focus {
   -webkit-transform: translateX(-2px);
           transform: translateX(-2px);
@@ -1755,5 +1750,79 @@ p {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------CERAMIC----------------------------*/
+.header-nav-list-ceramic{
+  display: none;
+}
+
+.our-block-img {
+    border-radius: 25px;
+    -webkit-filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
+    filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.our-info {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(10,70,70,.8);
+    border-bottom: solid 4px rgba(110,200,150);
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Courier New",Arial,sans-serif;
+    -webkit-filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
+    filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
+}
+
+.our-info-ceramic {
+    color: rgba(150,255,255);
+}
+
+.our-block h4 {
+  padding-top: 20px;
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.our-info3 {
+    text-align: justify;
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 
 }
