@@ -1357,7 +1357,6 @@ top: 20px;
   -webkit-transition: .2s;
   transition: .2s;
 }
-
 .overlayMenu ul li a {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1371,7 +1370,12 @@ top: 20px;
   margin-left: 20px;
   max-width: 290px
 }
-
+.dec{
+  margin-left: 40px !important;
+}
+.pat{
+  margin-left: 0px !important;
+}
 .overlay.open li:nth-of-type(2) {
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
@@ -1389,7 +1393,6 @@ top: 20px;
           animation-delay: .6s;
 }
 .overlay.open li:nth-of-type(6) {
-  margin-left: -20px;
   -webkit-animation-delay: .7s;
           animation-delay: .7s;
 }
@@ -1414,10 +1417,12 @@ top: 20px;
           animation-delay: .9s;
 }
 .overlay.open li:nth-of-type(11) {
+  margin-left: -20px;
   -webkit-animation-delay: .9s;
           animation-delay: .9s;
 }
 .overlay.open li:nth-of-type(12) {
+  margin-left: -20px;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -1454,26 +1459,35 @@ top: 20px;
           animation-delay: 1.4s;
 }
 .overlay.open li:nth-of-type(21) {
+  margin-left: -20px;
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 .overlay.open li:nth-of-type(22) {
+  margin-left: -20px;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 .overlay.open li:nth-of-type(23) {
+  margin-left: -20px;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
 .overlay.open li:nth-of-type(24) {
+  margin-left: -20px;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 .overlay.open li:nth-of-type(25) {
+  margin-left: -20px;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
-
+.overlay.open li:nth-of-type(26) {
+  margin-left: -20px;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
 
 .overlayMenu ul li a:hover, .overlayMenu ul li a:active, .overlayMenu ul li a:focus {
   -webkit-transform: translateX(-2px);
@@ -1817,7 +1831,6 @@ p {
 }
 
 .our-info3 {
-    text-align: justify;
     font-size: 22px;
     line-height: 28px;
     margin-left: 30px;
