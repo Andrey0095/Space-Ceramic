@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-width: 1000px) {
 /* fonts*/
 /* Cuprum normal */
 @font-face {
@@ -912,92 +912,14 @@ li > a:only-child:after { content: ''; }*/
   height: 210px;
 }
 }
+/*-------------------Конец настройка на основном DeskTop------------------*/
 
 
+/*-------------------- red   red   red   red    red    red   red    red   red   red   red -------------------------------------------------*/
 
+             /*-------------------Настройка на мобильные устройства------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------------------------------------*/
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1000px) {
 .slider-kharkiv__item div img {
   width: 100%;
   height: 260px;
@@ -1062,14 +984,7 @@ top: 20px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.overlay.open & .main-header{
-  width: 100%;
-  height: 960px;
-  background: linear-gradient(to bottom,rgba(0,0,0,.2) 0,rgba(0,0,0,.7) 75%,#000 100%),url(../img/bg-masthead.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .main-header h1{
   position: absolute;
   top: 200px;
@@ -1199,7 +1114,7 @@ top: 20px;
 }
 
 .feedback-link {
-    color: : #00f;
+    color:#00f;
     text-decoration: none;
 }
 
@@ -1778,30 +1693,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------CERAMIC----------------------------*/
 .header-nav-list-ceramic{
   display: none;
@@ -1853,35 +1744,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------START DECORATIVE BRICK----------------------------*/
 
 
@@ -1890,51 +1752,30 @@ p {
 }
 
 .decorative-tile-info {
-    color: rgba(210,210,120);
-    line-height: 50px;
+  color: rgba(210,210,120);
+  line-height: 50px;
 }
-.decorative-info {
-    font-size: 22px;
-    text-align: center;
-    line-height: 28px;
-    margin-left: 10px;
-    margin-right: 10px;
 
+.decorative-info {
+  font-size: 22px;
+  text-align: center;
+  line-height: 28px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 .decorative-block-center p {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 .text-decorative {
-    font-size: 22px;
-    line-height: 28 px;
-    text-align: left;
-    margin-left: 20px;
-    padding: 0;
+  font-size: 22px;
+  /* line-height: 28px; */
+  text-align: left;
+  margin-left: 20px;
+  padding: 0;
 }
 /*-----------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1949,24 +1790,24 @@ p {
 .header-nav-list-our{
   display: none;
 }
+
 .our-development {
   width: 90%;
   margin-top: 5%;
   margin-left: 5%;
-    border-radius: 25px;
-    border-bottom: solid 4px rgba(110,200,150);
-    -webkit-filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
-    filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
+  border-radius: 25px;
+  border-bottom: solid 4px rgba(110,200,150);
+  -webkit-filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
+  filter: drop-shadow(0 2px 7px rgba(0, 0, 0, .5));
 }
 
-
 .our-info-offset {
-    text-align: center;
-    font-size: 38px;
-    margin-top: 10px;
-    margin-bottom: 0;
-    color: rgba(10,70,70);
-    font-weight: 800;
+  text-align: center;
+  font-size: 38px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: rgba(10,70,70);
+  font-weight: 800;
 }
 
 .our-center {
@@ -1974,9 +1815,11 @@ p {
     font-size: 22px;
     font-family: "Courier New",Arial,sans-serif;
 }
+
 i {
     font-style: italic;
 }
+
 .our-title {
     margin: 0px;
     text-align: center;
