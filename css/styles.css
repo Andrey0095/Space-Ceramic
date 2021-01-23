@@ -1,4 +1,67 @@
+<<<<<<< Updated upstream
 .page-body{
+=======
+
+@media screen and (min-width: 1000px) {
+/* fonts*/
+/* Cuprum normal */
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+        url("../fonts/cuprum.woff") format("woff");
+}
+
+/* Cuprum bold */
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprumbold.woff") format("woff");
+}
+
+/* cuprum italic */
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+  url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+/* Pt Sans normal */
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+}
+
+/* Pt Sans bold */
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+>>>>>>> Stashed changes
   margin: 0;
   padding: 0;
 }
@@ -572,7 +635,7 @@
 
 /* ****************************** Разные offset-ы  END**************************** */
 /* ****************************** Media запросы START**************************** */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 .space-ceramic-offset {
   margin-top: 125px;
 }
@@ -581,8 +644,8 @@
     font-size: 5.5rem;
     line-height: 5.5rem;
   }
-} 
-/* @media (min-width: 992x) {
+}  */
+/* @media (min-width: 992px) {
   .main-header {
     h1: height: 50vh;
      height: 100vh;
@@ -1587,6 +1650,41 @@ p {
   .sidenav a {font-size: 18px;}
 }*/
 
+<<<<<<< Updated upstream
+=======
+.up-button {
+  position: fixed;
+  display: none;
+  z-index: 5;
+  padding: 0;
+  bottom: 30px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid;
+  border-radius: 50%;  
+  cursor: pointer;
+  color: #6653d9;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #6653d9;
+  outline-color: #b6aaff;
+}
+  
+.up-button:hover {
+  font-weight: 900;
+  color: rgba(10,200,150);  
+  border-color: rgba(10,200,150);  
+}
+
+.shown {
+  display: block;
+}
+
+>>>>>>> Stashed changes
 .no-show {
   display: none !important;
 } 
@@ -1694,24 +1792,6 @@ b {
 
 
 /*-----------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
