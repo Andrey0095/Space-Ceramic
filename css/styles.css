@@ -82,7 +82,7 @@
 }
 
 .shown {
-  display: block;
+  display: block !important;
 }
 .slider {
   position: relative;
