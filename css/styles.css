@@ -5,7 +5,7 @@
 
 .main-header {
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%);
   background-position: center;
     background-repeat: no-repeat;  
     background-size: cover;
@@ -1590,3 +1590,183 @@ b {
   width: 100%;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------TEST-----------------------------*/
+.shown-animation-contact1 {
+  animation-name: upup;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+}
+.shown-animation-contact2 {
+  animation-name: upup;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+.shown-animation-contact3 {
+  animation-name: upup;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+@keyframes upup {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+.space-ceramic-offset, .header-title-info {
+  animation: ease-in-out;
+  animation-name: left;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+@keyframes left {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+/*  60%{
+    transform: translateY(-30px);
+  }
+  85%{
+    transform: translateY(10px);
+  }*/
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/*@keyframes right {
+  from {
+    opacity: 0;
+    transform: translateX(-320px);
+  }
+  60%{
+    transform: translateX(30px);
+  }
+  85%{
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+*/
+/*
+a:hover {
+  animation: rotate 2s;
+  transform: rotateX(180deg);
+  transform-style: preserve-3d;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+    }
+}
+
+*/
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 45px;
+    border: 0 solid grey;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: 820px;
+    border:none !important;
+}
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    border:none;
+}
+
+
+
+
